@@ -1,12 +1,12 @@
 {
-  "name": "pierre",
+  "name": "dsee-node",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Steeve LEFORT",
   "license": "ISC",
   "dependencies": {
     "raw-socket": "^1.6.2"
