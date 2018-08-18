@@ -21,7 +21,6 @@ module.exports = class Hologram {
     execCommand(command, arg1 = 0, arg2 = 0) {
         return new Promise(function (resolve, reject) {
             if (typeof command !== "undefined") {
-                console.log("IP:", this.IP);
                 var socket8000 = net.createConnection(8000, this.IP);
                 socket8000.once('error', function (error) {
                     socket8000.removeAllListeners();
@@ -59,7 +58,6 @@ module.exports = class Hologram {
                         //unknowData:fields[2], // Don't know what is the third arg (always 1 ?)
                     });
                 });
-                //console.log(response,data, lines);
                 resolve(list);
             } catch (error) {
                 reject(error);        
